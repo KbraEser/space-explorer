@@ -1,10 +1,10 @@
 import React from "react";
+import Navi from "./components/Navi";
 
 const App = () => {
   return (
     <div>
-      <h1>Hello World </h1>
-      
+      <Navi />
     </div>
   );
 };

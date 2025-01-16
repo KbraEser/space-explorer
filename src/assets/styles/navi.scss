@@ -1,0 +1,33 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.3rem;
+
+    img {
+      width: 80px;
+      border-radius: 52%;
+    }
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    li {
+      cursor: pointer;
+      &:hover {
+        color: #746464;
+      }
+    }
+  }
+}
