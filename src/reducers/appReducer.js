@@ -1,13 +1,17 @@
-export const initialState = {};
+export const initialState = {
+  apodData: null,
+};
 
 export const appReducer = (state, action) => {
   switch (action.type) {
     // case-1
-    case "getApotData":
+    case "getApodData":
       return {
         ...state,
         apodData: action.payload,
       };
+    default:
+      return state;
   }
 };
 

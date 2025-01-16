@@ -1,6 +1,6 @@
 import React from "react";
 import DataContext from "../context/DataContext";
-import logo from "../assets/images/moon.jpg";
+import logo from "../assets/images/logo.jpg";
 import "../assets/styles/navi.scss";
 
 const Navi = () => {

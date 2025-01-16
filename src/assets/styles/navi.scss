@@ -8,11 +8,11 @@ nav {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 
     img {
       width: 80px;
-      border-radius: 52%;
+      border-radius: 40%;
     }
   }
 
@@ -21,7 +21,7 @@ nav {
     align-items: center;
     gap: 20px;
     list-style: none;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 600;
     li {
       cursor: pointer;
