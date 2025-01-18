@@ -8,13 +8,14 @@ const Navi = () => {
 
   return (
     <nav>
-      <div className="brand">
+      <div className="brand" onClick={() => navigate("/")}>
         <img src={logo} alt="" />
         <h3>Space Explorer</h3>
       </div>
       <ul className="nav-links">
         <li onClick={() => navigate("/apod")}>APOD</li>
         <li onClick={() => navigate("/asteroids")}>NeoWs</li>
+        <li onClick={() => navigate("/yourperspective")}>Your Perspective</li>
       </ul>
     </nav>
   );
