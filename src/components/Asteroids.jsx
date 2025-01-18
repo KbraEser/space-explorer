@@ -17,17 +17,17 @@ const Asteroids = () => {
 
   return (
     <div className="asteroids">
-      <h2>Yakın Geçiş Yapacak Asteroitler</h2>
+      <h2>Near Earth Object Web Service(3 days)</h2>
       <ul>
         {asteroidEntries.map((asteroid) => (
           <li key={asteroid.id}>
             <h3>{asteroid.name}</h3>
             <p>
-              Yaklaşma Tarihi:{" "}
+              Close Approach Date:{" "}
               {asteroid.close_approach_data[0].close_approach_date}
             </p>
             <p>
-              Çap:{" "}
+              Diameter:{" "}
               {asteroid.estimated_diameter.kilometers.estimated_diameter_min.toFixed(
                 2
               )}
@@ -38,12 +38,12 @@ const Asteroids = () => {
               km
             </p>
             <p>
-              Hız:{" "}
-              {
+              Speed:{" "}
+              {parseFloat(
                 asteroid.close_approach_data[0].relative_velocity
                   .kilometers_per_hour
-              }{" "}
-              km/s
+              ).toFixed(2)}{" "}
+              km/h
             </p>
             <p>
               Is Potentially Hazardous ? :{" "}

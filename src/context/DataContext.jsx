@@ -38,6 +38,7 @@ export const DataProvider = ({ children }) => {
   //   get Asteroids data
   const getAsteroidsData = async () => {
     try {
+      // Local storage kontrolü
       const asteroidsSavedData = localStorage.getItem("asteroidsData")
         ? JSON.parse(localStorage.getItem("asteroidsData"))
         : null;
@@ -54,10 +55,11 @@ export const DataProvider = ({ children }) => {
       endDate.setDate(endDate.getDate() + 2);
       const endDateString = endDate.toISOString().split("T")[0];
 
-      const url = `https://api.nasa.gov/neo/rest/v1/feed?start_date=${startDate}&end_date=${endDateString}&api_key=69SxOdgEfqQfcrEHra1CbQLLhN4HamUciwK4V6bW`;
+      const url = `https://api.nasa.gov/neo/rest/v1/feed?start_date=${startDate}&end_date=${endDateString}&api_key=${apiKey}`;
 
       const response = await axios.get(url);
       const asteroidsData = await response.data;
+      console.log(asteroidsData);
 
       localStorage.setItem("asteroidsData", JSON.stringify(asteroidsData));
 
