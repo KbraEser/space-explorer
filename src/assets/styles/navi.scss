@@ -24,14 +24,15 @@ nav {
   .nav-links {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 25px;
     list-style: none;
     font-size: 1.3rem;
     font-weight: 600;
     li {
       cursor: pointer;
       &:hover {
-        color: #746464;
+        transform: scale(1.02) translateX(5px);
+        transition: 1s;
       }
     }
   }

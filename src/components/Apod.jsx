@@ -12,9 +12,7 @@ const Apod = () => {
 
   return (
     <div className="container">
-      <h2 className="title">
-        Günün Uzay Fotoğrafı (APOD - Astronomy Picture of the Day)
-      </h2>
+      <h2 className="title">APOD - Astronomy Picture of the Day</h2>
       <div className="image-container">
         <img src={state.apodData.url} alt={state.apodData.title} />
         <p className="date">Date: {state.apodData.date}</p>
