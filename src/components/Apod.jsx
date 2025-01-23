@@ -14,7 +14,7 @@ const Apod = () => {
 
   return (
     <div className="container">
-      <h2 className="title">APOD - Astronomy Video of the Day</h2>
+      <h2 className="title">APOD - Astronomy Photo of the Day</h2>
       <div className="media-container">
         {media_type === "image" ? (
           <img src={url} alt={title} />
