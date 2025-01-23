@@ -12,7 +12,7 @@
     text-align: center;
     margin-bottom: 20px;
   }
-  .image-container {
+  .media-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,6 +22,10 @@
 
       border-radius: 50px;
     }
+    .iframe {
+      width: 100%;
+      aspect-ratio: 32/18;
+    }
 
     .date {
       align-items: flex-end;
@@ -30,7 +34,7 @@
     }
   }
   .explanation {
-    margin-top: 5px;
+    margin: 15px;
     font-size: 1rem;
     display: flex;
     flex-direction: column;
@@ -45,6 +49,7 @@
       font-weight: 600;
     }
     p {
+      margin-top: 15px;
       font-style: italic;
       font-size: 1.2rem;
       text-align: justify;

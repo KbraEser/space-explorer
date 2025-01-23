@@ -5,7 +5,6 @@ import Apod from "./components/Apod";
 import Asteroids from "./components/Asteroids";
 import Navi from "./components/Navi";
 import "./App.css";
-import YourPerspective from "./components/YourPerspective";
 
 const App = () => {
   return (
@@ -15,7 +14,6 @@ const App = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/apod" element={<Apod />} />
         <Route path="/asteroids" element={<Asteroids />} />
-        <Route path="/yourperspective" element={<YourPerspective />} />
       </Routes>
     </BrowserRouter>
   );

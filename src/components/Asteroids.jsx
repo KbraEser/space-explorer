@@ -25,11 +25,11 @@ const Asteroids = () => {
             <div className="asteroid-info">
               <h3>Name: {asteroid.name}</h3>
               <p>
-                Close Approach Date:{" "}
+                <strong> Close Approach Date:</strong>{" "}
                 {asteroid.close_approach_data[0].close_approach_date}
               </p>
               <p>
-                Diameter:{" "}
+                <strong> Diameter:</strong>{" "}
                 {asteroid.estimated_diameter.kilometers.estimated_diameter_min.toFixed(
                   2
                 )}
@@ -40,7 +40,7 @@ const Asteroids = () => {
                 km
               </p>
               <p>
-                Speed:{" "}
+                <strong>Speed:</strong>{" "}
                 {parseFloat(
                   asteroid.close_approach_data[0].relative_velocity
                     .kilometers_per_hour

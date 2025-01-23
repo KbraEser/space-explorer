@@ -6,7 +6,9 @@ const DataContext = createContext();
 
 export const DataProvider = ({ children }) => {
   const [state, dispatch] = useReducer(appReducer, initialState);
-  const apiKey = "69SxOdgEfqQfcrEHra1CbQLLhN4HamUciwK4V6bW";
+
+  //Users can add their own API keys here
+  const apiKey = "DEMO_KEY"; //Default NASA API DEMO_KEY
   const today = new Date().toISOString().split("T")[0];
 
   //   get APOD data
@@ -24,6 +26,7 @@ export const DataProvider = ({ children }) => {
       const url = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}`;
       const response = await axios.get(url);
       const apodData = await response.data;
+      console.log(apodData);
 
       localStorage.setItem("apodData", JSON.stringify(apodData));
 

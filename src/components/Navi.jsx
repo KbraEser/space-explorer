@@ -15,7 +15,6 @@ const Navi = () => {
       <ul className="nav-links">
         <li onClick={() => navigate("/apod")}>APOD</li>
         <li onClick={() => navigate("/asteroids")}>NeoWs</li>
-        <li onClick={() => navigate("/yourperspective")}>Your Perspective</li>
       </ul>
     </nav>
   );

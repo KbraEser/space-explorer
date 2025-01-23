@@ -10,17 +10,28 @@ const Apod = () => {
 
   if (!state.apodData) return <div className="loading">Loading...</div>;
 
+  const { url, media_type, title, date, explanation } = state.apodData;
+
   return (
     <div className="container">
-      <h2 className="title">APOD - Astronomy Picture of the Day</h2>
-      <div className="image-container">
-        <img src={state.apodData.url} alt={state.apodData.title} />
-        <p className="date">Date: {state.apodData.date}</p>
+      <h2 className="title">APOD - Astronomy Video of the Day</h2>
+      <div className="media-container">
+        {media_type === "image" ? (
+          <img src={url} alt={title} />
+        ) : (
+          <iframe
+            src={url}
+            title={title}
+            allow="fullscreen"
+            className="iframe"
+          ></iframe>
+        )}
+        <p className="date">Date: {date}</p>
       </div>
       <div className="explanation">
-        <h3>{state.apodData.title}</h3>
+        <h3>{title}</h3>
         <p>
-          <span>Explanation:</span> {state.apodData.explanation}
+          <span>Explanation:</span> {explanation}
         </p>
       </div>
     </div>

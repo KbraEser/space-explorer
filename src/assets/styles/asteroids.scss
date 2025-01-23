@@ -1,7 +1,8 @@
 .asteroids {
   padding: 20px;
-  color: #fff;
+  color: #ffffff;
   font-family: Arial, sans-serif;
+  font-size: 2rem;
   min-height: 100vh;
 
   .title {
@@ -14,7 +15,7 @@
 
   ul {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     list-style: none;
     padding: 0;
@@ -26,12 +27,20 @@
 }
 
 .asteroid-info {
-  background: url(../images/astronomy-1850461_1280.jpg);
-
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/astronomy-1850461_1280.jpg);
+  background-size: cover;
+  background-position: center;
   border-radius: 10px;
-  padding: 20px;
+  padding: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+  max-width: 100%;
+  overflow: hidden;
 
   h3 {
     font-size: 1.5rem;

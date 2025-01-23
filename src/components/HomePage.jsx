@@ -17,14 +17,6 @@ const HomePage = () => {
         Would you like to search asteroids by their closest approach date or
         browse the data set?
       </button>
-      <button
-        className="btn btn-upload"
-        onClick={() => {
-          navigate("/yourperspective");
-        }}
-      >
-        Would you like to upload your space photos?
-      </button>
     </div>
   );
 };
