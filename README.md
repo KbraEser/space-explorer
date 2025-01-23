@@ -1,8 +1,32 @@
-# React + Vite
+# Space Explorer 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Space Explorer, NASA'nın API'lerini kullanarak uzay ve astronomi ile ilgili güncel bilgileri sunan interaktif bir web uygulamasıdır.
+Responsive bir tasarım yapılmıştır. 
 
-Currently, two official plugins are available:
+# Ekran Görüntüleri 📸
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+## Özellikler ✨
+
+- **Günün Astronomi Fotoğrafı (APOD)**: Her gün NASA tarafından seçilen özel bir uzay fotoğrafı ve açıklaması yer alır.
+- **Yakın Dünya Cisimleri (NeoWs)**: Dünya'ya yakın geçen asteroidler hakkında detaylı bilgiler verir.
+  - Asteroid boyutları
+  - Yaklaşma tarihleri
+  - Göreceli hızları
+  - Potansiyel tehlike durumları
+
+## Teknolojiler 🛠
+
+- React.js
+- Context API
+- SCSS
+- Axios
+- NASA API
+- React Router
+
+## NASA API Kullanımı 🔑
+
+Uygulama varsayılan olarak NASA'nın DEMO_KEY API anahtarını kullanmaktadır. Kendi API anahtarınızı almak için: proge içindeki README.md 
+yönlendirmeleri takip edebirsiniz.
+
