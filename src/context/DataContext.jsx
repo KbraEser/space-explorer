@@ -7,8 +7,8 @@ const DataContext = createContext();
 export const DataProvider = ({ children }) => {
   const [state, dispatch] = useReducer(appReducer, initialState);
 
-  //Users can add their own API keys here
-  const apiKey = "DEMO_KEY"; //Default NASA API DEMO_KEY
+  // API anahtarını .env dosyasından alın
+  const apiKey = import.meta.env.VITE_API_KEY; // Vite ile alın
   const today = new Date().toISOString().split("T")[0];
 
   //   get APOD data
@@ -60,6 +60,7 @@ export const DataProvider = ({ children }) => {
 
       const url = `https://api.nasa.gov/neo/rest/v1/feed?start_date=${startDate}&end_date=${endDateString}&api_key=${apiKey}`;
 
+      console.log(apiKey);
       const response = await axios.get(url);
       const asteroidsData = await response.data;
       console.log(asteroidsData);

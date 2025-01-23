@@ -25,8 +25,8 @@ API anahtarınızı projeye eklemek için aşağıdaki adımları izleyin:
 
 #### Yöntem
 
-1. `src/context/DataContext.jsx` dosyasını açın.
-2. `const apiKey = "DEMO_KEY";` satırını kendi API anahtarınızla değiştirin.
+1. `.env` dosyasını oluşturun ve `VITE_API_KEY` adında bir değişken ekleyin.
+2. `VITE_API_KEY` değişkenini kendi API anahtarınızla değiştirin.
 
 ---
 
@@ -65,5 +65,5 @@ To add your API key to the project, follow these steps:
 
 #### Method
 
-1. Open the `src/context/DataContext.jsx` file.
+1. Create the `.env` file and add a variable named `VITE_API_KEY`.
 2. Replace the line `const apiKey = "DEMO_KEY";` with your own API key.
