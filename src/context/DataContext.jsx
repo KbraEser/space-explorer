@@ -7,8 +7,9 @@ const DataContext = createContext();
 export const DataProvider = ({ children }) => {
   const [state, dispatch] = useReducer(appReducer, initialState);
 
-  // API anahtarını .env dosyasından alın
-  const apiKey = import.meta.env.VITE_API_KEY; // Vite ile alın
+  // API anahtarını .env dosyasından al
+  const apiKey = import.meta.env.VITE_NASA_API_KEY;
+  console.log('API Key:', import.meta.env.VITE_NASA_API_KEY); // API anahtarını kontrol et
   const today = new Date().toISOString().split("T")[0];
 
   //   get APOD data

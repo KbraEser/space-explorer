@@ -3,6 +3,9 @@
 Space Explorer, NASA'nın API'lerini kullanarak uzay ve astronomi ile ilgili güncel bilgileri sunan interaktif bir web uygulamasıdır.
 Responsive bir tasarım yapılmıştır.
 
+## Proje Tanıtım Videosu 🎥
+[Space Explorer Tanıtım Videosu](https://youtu.be/5d09GzKUm04)
+
 # Ekran Görüntüleri 📸
 
 ## Özellikler ✨
